@@ -1,0 +1,32 @@
+Bankers:
+Max,Allocated, Need=Max-Allocated, Available 
+
+Available += Allocated
+
+Safe sequence
+Safe state
+
+For finding Need we will use priority.
+
+Description:
+1. A project based on optimal and economical distribution of resources for ocean cleanup
+2. This project is a real life application of Banker's deadlock avoidance algorithm in operating system
+3. In this project I have used the a Variation of Banker's Algorithm to ensure optimal and safe distribution of resources for cleanup of river deltas
+4. The variation made was based on a priority score generated using factors such as: population near delta, toxicity of the river, distance from current location of resources
+5. In order to find the shortest path to economically transfer the resources via seaways, the concept of A* algo was used.
+  
+
+Problems Faced:
+1. Deciding the priority formula
+2. Deriving an analogy b/w the problem statement and Banker's algorithm
+3. Getting the verified data about the exact population at the respective deltas
+
+Soln:
+1. priority = (population * toxicity)/distance
+2. To get a safe sequence in that will satisfy our requirements efficiently Banker's algo seemed to be the best choice
+3. Going through various articles on net about ocean cleanup
+
+Future Work:
+1. Handling Dynamic request change
+2. The current system is not user friendly (It's just a cpp code for which the user needs to enter data everytime in cmd), making a UI will be effective
+3. It's currently more of a theoritical concept that has a scope of exploration in real world
